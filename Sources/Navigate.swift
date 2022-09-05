@@ -17,7 +17,7 @@ public struct Step: Hashable {
 
 open class Flow {
     public var currentPathBinding: Binding<NBNavigationPath>?
-    public let steps: [Step]
+    public var steps: [Step]
     
     public init(steps: [Step] = []) {
         self.steps = steps

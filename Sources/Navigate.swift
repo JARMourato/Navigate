@@ -30,7 +30,7 @@ open class Flow {
     }
 }
 
-public class StepNavigator: ObservableObject {
+open class StepNavigator: ObservableObject {
     @Published public var path: NBNavigationPath = .init()
     private var flow: Flow = Flow()
     
@@ -54,3 +54,5 @@ extension View {
         nbNavigationDestination(for: Step.self) { $0.view }
     }
 }
+
+public typealias NavStack = NBNavigationStack
